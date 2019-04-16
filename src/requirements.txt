@@ -1,0 +1,1 @@
+cloudshell-networking-huawei>=3.0, <3.1
