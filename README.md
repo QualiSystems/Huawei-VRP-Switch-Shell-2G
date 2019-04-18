@@ -23,7 +23,7 @@ Release date: April 2019
 A shell integrates a device model, application or other technology with CloudShell. A shell consists of a data model that defines how the device and its properties are modeled in CloudShell, along with automation that enables interaction with the device via CloudShell.
 
 ### Networking Shells
-CloudShell's networking shells provide L2 or L3 connectivity between resources and/or Apps [remove "and/or Apps" if Switch].
+CloudShell's networking shells provide L2 or L3 connectivity between resources.
 
 ### **Huawei VRP Switch Shell 2G**
 **Huawei VRP Switch Shell 2G** shell provides you with connectivity and management capabilities such as device structure discovery and power management for the resource. 
@@ -43,7 +43,6 @@ Release: **Huawei VRP Switch Shell 2G**
 
 ▪ Other
 
-[Include this note only if the shell is a 2G shell]
 
 **Note:** If your CloudShell version does not support this shell, you should consider upgrading to a later version of CloudShell or contact customer support. 
 
@@ -57,42 +56,13 @@ The attribute names and types are listed in the following section of the Network
 
 https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/networking_standard.md#attributes
 
-The following table describes attributes that are unique to this shell and are not documented in the Shell Standard: 
-
-(Include additional information, as needed, to explain non-standard attributes, i.e. differences between this shell's attributes and the commands documented in the Shell Standard.)
-
-|Attribute Name|Data Type|Description|
-|:---|:---|:---|
-||||
-||||
-||||
-||||
-
 ### Automation
 This section describes the automation (driver) associated with the data model. The shell’s driver is provided as part of the shell package. There are two types of automation processes, Autoload and Resource. Autoload is executed when creating the resource in the **Inventory** dashboard, while resource commands are run in the sandbox.
-
-The following commands are available on the resource:
-
-* 
-* 
-* 
-* 
-* 
 
 For detailed information on each of the above commands, see the following section of the Networking Shell Standard:
 
 https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/networking_standard.md#commands
 
-The following table describes commands that are unique to this shell and are not documented in the Shell Standard: 
-
-(Include additional information, as needed, to explain non-standard commands, i.e. differences between this shell's commands and the commands documented in the Shell Standard.)
-
-|Command|Description|
-|:---|:---|
-|||
-|||
-|||
-|||
 
 # Downloading the Shell
 The **Huawei VRP Switch Shell 2G** shell is available from the [Quali Community Integrations](https://community.quali.com/integrations) page. 
@@ -165,7 +135,7 @@ full path"/>`
 	`<add key="PythonOfflineRepositoryPath" value="repository 
 full path"/>`
 
-5. Restart the Execution Server.
+5. Restart the **Execution Server**.
 
 ### Configuring a new resource
 This section explains how to create a new resource from the shell.
@@ -219,7 +189,7 @@ In online mode, the execution server automatically downloads and extracts the ap
 	
 4. Click **Run**.
 
-The Startup or Running configuration is saved to a file named *<ResourceName>-<startup/running-config>-<timestamp>*, which will be stored in the folder path you entered above.
+The **Startup** or **Running** configuration is saved to a file named *<ResourceName>-<startup/running-config>-<timestamp>*, which will be stored in the folder path you entered above.
 
 #### **Workflow 2** - *Restore configuration* 
 1. In CloudShell Portal, reserve the resource.
@@ -257,12 +227,10 @@ To connect with Quali users and experts from around the world, ask questions and
 
 ### What's New
 
-[Note]: Insert link to the release section of the shell GitHub repository to view changes made in each release. You should include a brief description of the fixes and enhancements made in this release.
-
 For release updates, see the shell's [GitHub releases page](https://github.com/QualiSystems/HuaweiVRPSwitchShell2G/releases).
 
 ### Known Issues
-* 
+* Model Name may sometimes display unclear value. Example: `dcswitch.34`
 * 
 * 
 
